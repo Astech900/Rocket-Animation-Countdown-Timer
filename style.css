@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/planet-earth-background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.container nav {
+    width: 100%;
+    height: 6rem;
+    color: #fff;
+    padding: 1.8rem 5%;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.container .container-body {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 4.5rem;
+
+
+}
+
+.content-col {
+    width: 65%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: calc(100vh - 6rem);
+
+}
+
+.content-col p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 0.2rem 0;
+}
+
+.content-col h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0.5rem 0 1rem 0;
+
+}
+
+.content-col h2 span {
+    color: aquamarine;
+}
+
+.laouch-timer {
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.laouch-timer p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.content-col button {
+    width: auto;
+    height: auto;
+    padding: 0.7rem 1rem;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: 0;
+    color: #fff;
+    cursor: pointer;
+
+
+}
+
+.content-col button:hover {
+    background-color: #000;
+    color: aquamarine;
+}
+
+.content-col button i {
+    margin-left: 10px;
+}
+
+.rocket-col {
+    width: 35%;
+    height: calc(100vh - 6rem);
+    position: relative;
+}
+
+.rocket-col img {
+    width: 50%;
+    position: absolute;
+    bottom: -50%;
+    left: 40%;
+    animation: goup 4.5s linear infinite;
+}
+
+@keyframes goup {
+    0% {
+        bottom: -50%;
+        opacity: 0;
+
+    }
+
+    30% {
+        opacity: 0.5;
+    }
+
+    100% {
+        bottom: 120%;
+        opacity: 1;
+    }
+
+}
